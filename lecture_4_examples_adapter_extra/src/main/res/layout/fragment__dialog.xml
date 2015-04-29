@@ -1,42 +1,83 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="se.mah.k3.lecture_4_examples_adapter_extra.FragmentDialog">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    tools:context="se.mah.k3.lecture_4_examples_adapter_extra.FragmentSpinners"
+    android:orientation="vertical"
+    android:background="@android:color/white">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Arthur Green"
-        android:id="@+id/tv_dialog_title"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/iv_dialog"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="57dp"
-        android:src="@drawable/img1" />
+    <TableLayout
+        android:layout_width="300dp"
+        android:layout_height="450dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitXY"
+        android:background="#4f918e8f">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/scrollView"
-        android:layout_below="@+id/iv_dialog"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="50dp">
-
-        <TextView
+        <TableRow
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Large Text"
-            android:id="@+id/tv_dialog_description"
-            android:layout_below="@+id/iv_dialog"
-            android:layout_alignParentStart="true" />
-    </ScrollView>
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="40dp"
+            android:scaleType="fitXY">
 
-</RelativeLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitXY">
+
+
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="180dp"
+                    android:src="@drawable/probablyme"
+                    android:id="@+id/hon"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/mumsaysimspecial"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="6dp"
+                    android:textColor="#ff040102"
+                    android:layout_gravity="center_horizontal"
+                    android:scaleType="fitXY"/>
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView"
+            android:layout_marginTop="20dp"
+            android:background="#4f918e8f"
+            android:scaleType="fitXY">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:gravity="center"
+                android:id="@+id/haj"
+                android:layout_marginTop="10dp"
+                android:textColor="#ff040102"
+                android:text="@string/confusion"
+                android:scaleType="fitXY"/>
+
+
+        </ScrollView>
+
+    </TableLayout>
+
+</LinearLayout>
+

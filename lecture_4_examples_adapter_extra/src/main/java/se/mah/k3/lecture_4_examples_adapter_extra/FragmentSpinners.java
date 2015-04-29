@@ -1,57 +1,49 @@
 package se.mah.k3.lecture_4_examples_adapter_extra;
 
 
-import android.os.Bundle;
-import android.app.Fragment;
-import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.Spinner;
-import android.widget.Toast;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.app.Fragment;
+import android.os.Bundle;
+import android.view.LayoutInflater;
+
 
 
 /**
- * A simple {@link Fragment} subclass.
+ * A simple {@link android.app.Fragment} subclass.
  */
-public class FragmentSpinners extends Fragment implements AdapterView.OnItemSelectedListener{
+
+public class FragmentSpinners extends Fragment  {
 
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_with_spinners, container, false);
-        Spinner spinner = (Spinner)v.findViewById(R.id.spinner_book_names);
-        spinner.setOnItemSelectedListener(this); //This class implements OnItemSelectedListenr
-        Spinner spinner2 = (Spinner)v.findViewById(R.id.spinner_other_book_names);
-        ArrayAdapter<Book> bookAdapter = new ArrayAdapter<Book>(this.getActivity(),
-                android.R.layout.simple_spinner_dropdown_item,
-                FragmentList.books);
-        spinner2.setAdapter(bookAdapter);
-        spinner2.setOnItemSelectedListener(this);
+        Planeta p = (Planeta) getArguments().getSerializable("planet");
+
+        TextView tack = (TextView) v.findViewById(R.id.planetnamn);
+        ImageView naw = (ImageView) v.findViewById(R.id.planetbild);
+        TextView temper = (TextView) v.findViewById(R.id.planetstuff);
+        TextView iloveu = (TextView) v.findViewById(R.id.scroll_lol);
+        TextView rarrrraar = (TextView) v.findViewById(R.id.WhatWasThis);
+
+
+        tack.setText(p.getTitle());
+
+        temper.setText("Temperatur: " + p.getTempan());
+        rarrrraar.setText("Radie: " + p.getRadie());
+
+        iloveu.setText(p.getSummakardemumma());
+        naw.setImageDrawable(p.getImage());
+
         return v;
-    }
-
-    @Override
-    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-            if (parent.getId()==R.id.spinner_book_names){
-                String[] bookNames = getResources().getStringArray(R.array.books);
-                Log.i("FragmentWithSpinners","Selected position:  "+position+" and book item " +  bookNames[position]);
-                Toast.makeText(this.getActivity(),"Selected position:  "+position+" and book item " +  bookNames[position],Toast.LENGTH_LONG).show();
-            }
-
-            if (parent.getId()==R.id.spinner_other_book_names){
-                String[] isbn_numbers = getResources().getStringArray(R.array.books_isbn);
-                Log.i("FragmentWithSpinners","Selected position:  "+position+" with title " +  FragmentList.books.get(position).getTitle());
-                Toast.makeText(this.getActivity(),"Selected position:  "+position+" with title " +  FragmentList.books.get(position).getTitle(),Toast.LENGTH_LONG).show();
-            }
-    }
-
-    @Override
-    public void onNothingSelected(AdapterView<?> parent) {
 
     }
+
+
 }

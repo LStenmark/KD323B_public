@@ -1,18 +1,84 @@
 <resources>
-    <string name="app_name">Lecture_4_examples</string>
+    <string name="app_name">   Planeta</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <string name="action_spinner">Suku Laku</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="action_spinner">Spinner</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string-array name="books">
-        <item>Well Designed</item>
-        <item>Att skapa effektiva team</item>
-        <item>About face</item>
-    </string-array>
-    <string-array name="books_isbn">
-        <item>08235090234</item>
-        <item>03423049203</item>
-        <item>75405298234</item>
-    </string-array>
-</resources>
+    <string name="mumsaysimspecial">A very special person...</string>
+
+
+    <string name="mercury_tempydempy">-180 to 430 C</string>
+    <string name="venus_tempydempy">465 C</string>
+    <string name="earth_tempydempy"> -89 to 58 C</string>
+    <string name="mars_tempydempy">-82 to 0 C</string>
+    <string name="jupiter_tempydempy">-150 C</string>
+    <string name="saturn_tempydempy">-170 C</string>
+    <string name="uranus_tempydempy">-200 C</string>
+    <string name="neptune_tempydempy">-210 C</string>
+
+
+    <string name="mer_rad">2 440 kilo...meter</string>
+    <string name="ven_rad">6052 kilo...meter</string>
+    <string name="ear_rad">6378 kilo...meter</string>
+    <string name="mar_rad">3396 kilo...meter</string>
+    <string name="jup_rad">25362 kilo...meter</string>
+    <string name="sat_rad">60268 kilo...meter</string>
+    <string name="nep_rad">25362 kilo...meter</string>
+    <string name="ura_rad">25362 kilo...meter</string>
+
+    <string name="confusion">Who am I? I dunno, who are you?
+How do I what?
+How am I......doing what?
+Is that a trick question?
+YOU KNOW PERFECTLY WELL WHO I AM YA! Right?...Please?
+Aww, fiddlesticks.
+Living long and prospering!
+  </string>
+
+        <string name="mercury">Mercury</string>
+        <string name="venus">Venus</string>
+        <string name="earth">Earth</string>
+        <string name="mars">Mars</string>
+        <string name="jupiter">Jupiter</string>
+        <string name="saturn">Saturn</string>
+        <string name="uranus">Uranus</string>
+        <string name="neptune">Neptune</string>
+
+
+
+
+        <string-array name="NawPlanets">
+            <item>Mercury</item>
+            <item>Venus</item>
+            <item>Earth</item>
+            <item>Mars</item>
+            <item>Jupiter</item>
+            <item>Saturn</item>
+            <item>Uranus</item>
+            <item>Neptune</item>
+        </string-array>
+
+
+
+        <string name="mer_sum">Freddie Mercury or His Holy Greatness King Frederick of Mercury and the Entire Universe of Everything Awesome (incarnated September 5, 1946), singer, front man, author, opera diva, boxing champion, bike racer, ballet dancer, and the Right Hand of god, is best remembered today for his many international hits and for conquering the world. It is said that Freddie Mercury\'s voice can stop Humphrey Bogart in his tracks, and he is accepted as the greatest singer of all time, despite what those biased, hypocritical assholes at Rolling Stone wrote about him. Freddie Mercury outperforms every other singer in the world in terms of control, power, range, articulation, phrasing, use of dynamics, uniqueness, breath support, register switching, register blending, pitch, vocal runs, consistency throughout registers, volume control, vibrato control, sustain, diction, projection, resonance, and versatility. He is said to have a vocal range of 32 octaves.
+In addition, it has recently been discovered that his moustache was home to several species of endangered animals. Biologists worldwide are currently exhuming his corpse to allow the reintroduction several genus which where previously thought to have died out in the late 1980s.
+Freddie is also notable for his unusual teeth, interesting fashion choices and large collection of cats. Especially in the early days, he used to play the piano in the way most people played drums. It has also been noted that you used to be able to see his teeth from space.</string>
+
+        <string name="ven_sum">Venus is the Earth\'s closest neighbor and second planet from the Sun. It appears in the sky even more brilliantly than Freddie Mercury and is second only to Keith Moon and the Sun for illuminating mankind. It looks like a bright star in the morning or evening sky, and sometimes it is called the wishing star. This is probably based on the fact that so many young men have gazed up at it and thought, man I wish I had a babe as hot as Venus, or maybe just any girl at all, but because it\'s just a planet, it has never and will never grant your pathetic wishes.
+Venus is a little smaller than Earth, and is similar to Earth beneath it\'s surface. We can\'t see the surface of Venus from Earth, because it is covered with thick clouds. However, space missions to Venus have shown us that its surface is covered with craters, volcanoes, mountains, and big lava plains. The surface of Venus is not somewhere you\'d like to be. It has temperatures that can melt lead, an atmosphere so thick it would crush you, clouds of sulfuric acid that smell like rotten eggs, and no good bars anywhere. Due to the suspected nature of Venus it has long since been associated with Women. </string>
+        <string name="ear_sum">Earth (or The Earth as it is known by its self-absorbed inhabitants) is the third planet from the star Sol. The planet\'s most visible intelligent life, known simply as humans, believe that their small ball of rock is in fact the only planet in the entire universe that is inhabited. It is entirely understandable that they would leap to such a ridiculous conclusion considering that Earth\'s inhabitants have never journeyed anywhere else in the universe. What\'s more, they\'ve even ignored the best vacation spots in their own star system. This is probably due to the fact that Earth\'s inhabitants are incredibly dull and spend most of their time either watching TV or killing each other.</string>
+
+        <string name="mar_sum">Mars is the fourth planet from the Sun and the second smallest planet in the Solar System, after Mercury. Named after the Roman god of war, it is often referred to as the "Red Planet" because the iron oxide prevalent on its surface gives it a reddish appearance. Mars is a terrestrial planet with a thin atmosphere, having surface features reminiscent both of the impact craters of the Moon and the volcanoes, valleys, deserts, and polar ice caps of Earth. </string>
+
+        <string name="jup_sum">There have so far been 5 distinct races of Intelligent life identified on Jupiter. In the mid-western southen tropics dwell a race of remarkably large nuns. Recent studies taken from the Interglacial Period Studiers have proven that the nuns living on Jupiter have increased in size because of the extra space that is available on the Huge Galactic Planet and due to the fact that they need to counter the extreme gravity exhibited from the planet. The nuns do not communicate with outsiders and though much information has been gathered about them by this research the Communist Space Monkey People\'s Republic of Northern Mars restrict access to this research and are generally quite snarky about sharing any of it, citing it as "confidential due to the copyright laws of that sector".
+Earth sources (mostly comprising information gathered from the Event Horizon expedition, shortly before Sam Niell went crazy and killed everybody[1]) can confirm that the planet\'s skies are "full of flying gorillas", although DNA tests show that these are probably common chimps.
+The largest percentage of the population however are Vampires and Vampaneze, who live in peace with each other in the southern ice caps. These species are planning a full-scale attack on Earth. Reports of "snake boy" joining in are unconfirmed. The snake boy is a rouge orphan who roams the desserts of the eastern continent of Eclair. He can turn people into snakes. </string>
+
+        <string name="sat_sum">Saturn is a lying, bitchy piece of shit. Her specialties are propaganda and lies, and she has used these skills to become the major political player in the solar system. Saturn was the one that pushed for Pluto to lose planetary status. Was it any coincidence that just a few short weeks after their disastrous August 5, 2006 romantic date (Which Pluto\'s status update revealed "Couldn\'t have ended soon enough.") that Pluto was removed from textbooks worldwide? Or that just a year after that, Pluto went missing, and hasn\'t been heard from since? Interstellar police (more on them later) have called the circumstances suspicious, but still expect Pluto to turn up eventually, stating that it should cross paths with Neptune in a couple hundred years or so. Why aren\'t they searching harder? What does Saturn have on them?</string>
+        <string name="ura_sum">There is a great amount of stuff lost up Uranus. Recently, NASA used a special robot to probe Uranus and found out that a lot of the lost stuff on Earth is somehow teleported deep inside Uranus. \n Recently it has been discovered that Uranus is not a planet, but actually a black hole. But unlike most black holes, in which nothing can escape, everything eventually comes out of Uranus as dark matter. The eventual fate of the universe is to be filled with dark matter that came from Uranus. It may seem to be pollution; however, it is quite healthy.</string>
+        <string name="nep_sum">Neptune is a planet.[WTF?] Its astronomical symbol is ♆, a stylized version of Devil\'s trident and it is said that this symbol was given to a planet by a satanist. Neptune is far away in this galaxy and is one of the 9... er... that is, 8 planets of the solar system. Pluto recently had to resign its planet title since it lost by KO to Neptune in an unification bout. One thing many people don\'t know is that Neptune actually has one ring like Saturn does but lost it and can\'t find the damn thing since it is its old engagement ring. As the marriage with Uranus was ailing, the couple soon broke up and Neptune took off its ring for some time. It\'s probably floating.</string>
+
+    </resources>
+
+

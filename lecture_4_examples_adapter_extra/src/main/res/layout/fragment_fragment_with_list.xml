@@ -1,14 +1,21 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/gridy">
+
+<GridView
+    android:id="@+id/TurnDownForGrid"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="se.mah.k3.lecture_4_examples_adapter_extra.FragmentList">
+    android:verticalSpacing="0dp"
+    android:horizontalSpacing="0dp"
+    android:stretchMode="columnWidth"
+    android:numColumns="2"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginLeft="12dp"
+    android:layout_marginTop="12dp"/>
 
-    <!-- TODO: Update blank fragment layout -->
 
-    <ListView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/listView"
-        android:layout_gravity="start"
-        android:choiceMode="singleChoice" />
 </FrameLayout>
